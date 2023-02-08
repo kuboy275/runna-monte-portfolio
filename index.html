@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | KIMTrang | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.3.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+    <a href="#" class="back-to-top" data-aos="zoom-in-right" data-aos-duration="3000"><i class="fas fa-chevron-up"></i></a>
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
@@ -47,11 +48,11 @@
     <!-- Banner -->
     <section class="banner">
         <div class="banner-content">
-            <h1 class="effect-text" data-words="Runa Mont,Web Designer">I'm
+            <h1 data-aos="fade-up" data-aos-duration="1500" class="effect-text" data-words="Runa Mont,Web Designer">I'm
                 <span class="typed-text"></span>
                 <span class="cursor-text">&nbsp;</span>
             </h1>
-            <div class="banner-scroll">
+            <div class="banner-scroll" data-aos="fade-down">
                 <a href="#info"><i class="fas fa-angle-down"></i></a>
             </div>
         </div>
@@ -59,7 +60,7 @@
 
     <!-- Info -->
     <section class="info" id="info">
-        <div class="info-content">
+        <div class="info-content" data-aos="flip-left" data-aos-duration="1000">
             <h1>Kim Trang</h1>
             <p>Music Portfolio</p>
             <h4>Music master F U T U R E life. 🧿🗜️🥽</h4>
@@ -69,7 +70,7 @@
     <!-- Bio -->
     <section class="bio" id="bio">
         <div class="row bio-content">
-            <div class="desc">
+            <div class="desc" data-aos="fade-right" data-aos-duration="1000">
                 <h2>About Runa Mont</h2>
                 <h6>Bio</h6>
                 <p>Born in Ho Chi Minh City, Kim Trang as know as Runa Mont is a sound designer/ DJ/ Music Producer
@@ -82,7 +83,7 @@
                     nature conservatory through music.</p>
 
             </div>
-            <div class="img-container">
+            <div class="img-container" data-aos="fade-left" data-aos-duration="1000">
                 <img src="./imgs/bio-img.webp" width="100%">
             </div>
         </div>
@@ -93,17 +94,17 @@
         <div class="container">
             <h1>Professional CV</h1>
             <div class="row">
-                <div class="pro-item">
+                <div class="pro-item" data-aos="flip-up" data-aos-duration="1000">
                     <img src="./imgs/pro-ic1.svg" width="30">
                     <h4>Music Lessons</h4>
                     <p>Studied electronic/ sound design in <br> Denmark and music production Viet Nam</p>
                 </div>
-                <div class="pro-item">
+                <div class="pro-item" data-aos="flip-up" data-aos-duration="1000">
                     <img src="./imgs/pro-ic1.svg" width="30">
                     <h4>Live Performance</h4>
                     <p>​Professional at electronic live improvisation </p>
                 </div>
-                <div class="pro-item">
+                <div class="pro-item" data-aos="flip-up" data-aos-duration="1000">
                     <img src="./imgs/pro-ic1.svg" width="30">
                     <h4>Musical Collaboration</h4>
                     <p>​Infrasonicsounds and visual live</p>
@@ -115,10 +116,10 @@
     <section class="experience">
         <div class="container">
             <div class="row exp-content">
-                <div class="img-container">
+                <div class="img-container" data-aos="fade-left" data-aos-duration="1000">
                     <img src="./imgs/exe-1.webp" width="100%">
                 </div>
-                <div class="desc">
+                <div class="desc" data-aos="fade-right" data-aos-duration="1000">
                     <h2>Live Performances and DJ</h2>
                     <div class="time-line">
                         <h6>2019</h6>
@@ -185,8 +186,12 @@
     <footer class="footer">
         <p>©2023 by Runa Monte. Proudly created with Wix.com</p>
     </footer>
-    <script src="./main.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
